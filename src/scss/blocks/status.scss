@@ -1,0 +1,16 @@
+/* @import '../base/variables.scss'; */
+@import '@/scss/base/variables.scss';
+
+.status {
+	padding: 0 8px;
+	height: 19px;
+	color: $bgc-secondary;
+	border-radius: 4px;
+	background-color: $bronze;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__primary-bgc {
+		background-color: $bgc-primary;
+	}
+}

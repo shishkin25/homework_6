@@ -1,0 +1,24 @@
+@import '@/scss/base/variables.scss';
+
+.status {
+	padding: 0 8px;
+	height: 19px;
+	color: $bgc-secondary;
+	border-radius: 4px;
+	background-color: $bronze;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	&__primary-bgc {
+		background-color: $bgc-primary;
+	}
+    &_blue {
+        background-color: $bgc-primary;
+    }
+    &_gray {
+        background-color: $font-disabled;
+    }
+    &_orange {
+        background-color: $font-error;
+    }
+}

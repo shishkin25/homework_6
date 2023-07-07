@@ -1,0 +1,34 @@
+/* @import '../base/variables.scss'; */
+@import '@/scss/base/variables.scss';
+
+.extra-options {
+	display: none;
+	width: 42px;
+	height: 42px;
+	border: 1px solid $border-default;
+	border-radius: 4px;
+	margin: 0 0 0 16px;
+	cursor: pointer;
+	color: $border-active;
+	position: relative;
+	&:hover {
+		background-color: $bgc-secondary-hover;
+		border: 1px solid $border-hover;
+	}
+	&.extra-options__active {
+		background-color: $bgc-secondary-active;
+		border: 1px solid $border-active;
+	}
+	&__show {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__left {
+		margin-left: auto;
+	}
+	svg {
+		width: 5px;
+		height: 13px;
+	}
+}

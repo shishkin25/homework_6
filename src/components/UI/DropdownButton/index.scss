@@ -1,0 +1,16 @@
+@import '@/scss/base/variables.scss';
+
+.dropdown-button {
+    display: inline-block;
+    position: relative;
+    &__name {
+        margin: 0 8px 0 0;
+    }
+    &__svg {
+        display: flex;
+        align-items: center;
+        &_grayArrow {
+            color: $border-default;
+        }
+    }
+}

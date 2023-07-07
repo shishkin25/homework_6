@@ -1,0 +1,13 @@
+/* @import '../base/variables.scss'; */
+@import '@/scss/base/variables.scss';
+
+.avatar {
+	width: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		max-width: 100%;
+		border-radius: 50%;
+	}
+}

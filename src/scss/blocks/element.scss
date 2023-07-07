@@ -1,0 +1,64 @@
+/* Независимый блок для элементов (списика задач, списка проектов и т.п). Используется в обоих случаях*/
+@import '@/scss/base/variables.scss';
+
+.element {
+	margin: 0 0 10px 0;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 16px 8px 16px;
+		border-bottom: 1px solid $border-active;
+		&_taskHeight {
+			height: 69px;
+		}
+		&_projectHeight {
+			height: 65px;
+		}
+	}
+	&__options {
+		display: none;
+		margin: 0 0 0 16px;
+	}
+	&:hover .element__options {
+		display: inline-block;
+	}
+	&__content {
+		width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+		
+		&-header, &-footer {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&-name {
+			font-weight: 400;
+			font-size: $fz-default;
+			cursor: pointer;
+		}
+		&-info {
+			display: flex;
+			align-items: flex-end;
+		}
+		&-code {
+			font-weight: 400;
+			font-size: $fz-default;
+			margin: 0 16px 0 0;
+		}
+		&-created {
+			margin: 0 16px 0 0;
+            color: $font-disabled;
+            font-size: 14px;
+            font-weight: 400;
+		}
+        &-changing {
+            color: $font-disabled;
+            font-size: 14px;
+            font-weight: 400;
+        }
+	}
+}

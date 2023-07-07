@@ -1,0 +1,28 @@
+@import '@/scss/base/fonts.scss';
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#app {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
